@@ -1,0 +1,42 @@
+CREATE THIS EXACT FOLDER STRUCTURE:
+=====================================
+
+images/
+├── hero/
+│   └── hero-background.jpg          (1920x1080px recommended - landscape)
+│
+├── gallery/
+│   ├── children-education.jpg       (1200x900px recommended)
+│   ├── food-distribution.jpg        (1200x900px recommended)
+│   ├── volunteers-working.jpg       (1200x900px recommended)
+│   ├── community-outreach.jpg       (1200x900px recommended)
+│   ├── children-playing.jpg         (1200x900px recommended)
+│   └── healthcare-services.jpg      (1200x900px recommended)
+│
+├── cta/
+│   └── emotional-banner.jpg         (1920x1080px recommended - landscape)
+│
+├── team/
+│   ├── founder.jpg                  (800x800px recommended - square)
+│   ├── coordinator.jpg              (800x800px recommended - square)
+│   └── volunteer-coordinator.jpg    (800x800px recommended - square)
+│
+└── testimonials/
+    ├── testimonial-1.jpg            (400x400px recommended - square)
+    ├── testimonial-2.jpg            (400x400px recommended - square)
+    └── testimonial-3.jpg            (400x400px recommended - square)
+
+
+TOTAL: 14 images needed
+
+
+TIPS:
+- Filenames must match exactly (case-sensitive!)
+- Use JPG or PNG format
+- Keep file sizes under 2MB each
+- Use real photos from your charity work for authenticity
+- Professional headshots for team members
+- Action shots for gallery (children, volunteers, programs)
+
+
+After adding images, click the blue image icon button on the website to verify all are loaded!
