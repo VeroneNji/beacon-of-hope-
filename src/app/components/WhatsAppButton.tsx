@@ -6,10 +6,10 @@ export function WhatsAppButton() {
       href="https://wa.me/237652572439"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 bg-gradient-to-br from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white rounded-full p-4 shadow-2xl hover:scale-110 transition-all z-50 group animate-bounce-slow"
+      className="fixed bottom-4 right-4 md:bottom-8 md:right-8 bg-gradient-to-br from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white rounded-full p-3 md:p-4 shadow-2xl hover:scale-110 transition-all z-50 group animate-bounce-slow"
       aria-label="Contact us on WhatsApp"
     >
-      <MessageCircle className="w-7 h-7 fill-white" />
+      <MessageCircle className="w-6 h-6 md:w-7 md:h-7 fill-white" />
       
       {/* Tooltip */}
       <span className="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-semibold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-xl">

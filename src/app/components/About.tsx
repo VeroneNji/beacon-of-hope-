@@ -1,15 +1,17 @@
 import { Shield, Target, Eye, MapPin } from "lucide-react";
+import { images } from "../config/imageConfig";
+import { LocalImage } from "./LocalImage";
 
 export function About() {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-12 md:py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
-          <div className="rounded-2xl overflow-hidden shadow-xl">
-            <img
-              src="https://images.unsplash.com/photo-1615463669098-521a22047a1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDYW1lcm9vbiUyMGNvbW11bml0eSUyMHN1cHBvcnQlMjBlbXBvd2VybWVudHxlbnwxfHx8fDE3NzE2ODY2MjV8MA&ixlib=rb-4.1.0&q=80&w=1080"
-              alt="Community support"
+          <div className="rounded-2xl overflow-hidden shadow-xl aspect-video lg:aspect-auto h-full min-h-[300px]">
+            <LocalImage
+              src={images.ctaBanner.background}
+              alt="Community support in Cameroon"
               className="w-full h-full object-cover"
             />
           </div>

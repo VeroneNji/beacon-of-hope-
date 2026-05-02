@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Button } from "./ui/button";
-import { Heart, Menu, X } from "lucide-react";
+import { Heart, Menu, X, ImageIcon } from "lucide-react";
+import { images } from "../config/imageConfig";
+import { LocalImage } from "./LocalImage";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,13 +27,18 @@ export function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <div className="flex items-center gap-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <div className="bg-gradient-to-br from-green-600 to-green-700 p-2 rounded-lg">
-              <Heart className="w-6 h-6 text-white fill-white" />
+          <div className="flex items-center gap-3 cursor-pointer group" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            <div className="relative w-12 h-12 flex items-center justify-center">
+              <LocalImage 
+                src={images.logo} 
+                alt="Beacon of Hope Logo" 
+                className="w-11 h-11 object-contain transition-transform group-hover:scale-105"
+                fallbackGradient="from-green-600 to-green-700 rounded-lg"
+              />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-green-800">Beacon of Hope</h1>
-              <p className="text-xs text-gray-600 hidden sm:block">Transforming Lives in Cameroon</p>
+              <h1 className="text-xl font-bold text-green-800 leading-none">Beacon of Hope</h1>
+              <p className="text-[10px] uppercase tracking-widest text-gray-500 font-bold mt-1 hidden sm:block">Cameroon Charity</p>
             </div>
           </div>
 

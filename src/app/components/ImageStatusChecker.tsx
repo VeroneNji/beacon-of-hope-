@@ -47,7 +47,7 @@ export function ImageStatusChecker() {
           setIsOpen(true);
           checkAllImages();
         }}
-        className="fixed bottom-24 right-6 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg z-50"
+        className="fixed bottom-4 left-4 md:bottom-28 md:right-8 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg z-50"
         title="Check Image Status"
       >
         <ImageIcon className="w-5 h-5" />
@@ -59,7 +59,7 @@ export function ImageStatusChecker() {
   const totalCount = allImages.length;
 
   return (
-    <div className="fixed bottom-24 right-6 bg-white rounded-lg shadow-2xl p-4 max-w-md max-h-96 overflow-y-auto z-50 border-2 border-blue-600">
+    <div className="fixed bottom-4 left-4 right-4 md:left-auto md:bottom-28 md:right-8 bg-white rounded-lg shadow-2xl p-4 md:max-w-md max-h-96 overflow-y-auto z-50 border-2 border-blue-600">
       <div className="flex items-center justify-between mb-3 pb-2 border-b">
         <h3 className="font-bold text-gray-900 flex items-center gap-2">
           <ImageIcon className="w-5 h-5 text-blue-600" />

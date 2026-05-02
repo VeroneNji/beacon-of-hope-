@@ -5,7 +5,7 @@ import { LocalImage } from "./LocalImage";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[80vh] sm:min-h-[90vh] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <LocalImage
@@ -27,13 +27,13 @@ export function Hero() {
             <span className="text-sm text-white font-medium">Legally Registered Nonprofit in Cameroon</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in-up">
+          <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight animate-fade-in-up">
             Lighting the Path to Hope and Opportunity
           </h1>
-          <p className="text-xl sm:text-2xl text-yellow-400 mb-4 font-semibold animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+          <p className="text-base sm:text-xl lg:text-2xl text-yellow-400 mb-3 sm:mb-4 font-semibold animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
             Transforming lives, creating futures, and building hope one step at a time.
           </p>
-          <p className="text-base sm:text-lg text-gray-200 mb-8 max-w-2xl animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <p className="text-sm sm:text-base lg:text-lg text-gray-200 mb-6 sm:mb-8 max-w-2xl animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             Beacon of Hope is a legally registered nonprofit organization transforming 
             communities in Cameroon through education, support, and empowerment.
           </p>
@@ -42,36 +42,36 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             <Button 
               size="lg" 
-              className="bg-red-600 hover:bg-red-700 text-white text-lg px-8 py-6 shadow-2xl hover:shadow-red-600/50 transition-all group"
+              className="bg-red-600 hover:bg-red-700 text-white text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 shadow-2xl hover:shadow-red-600/50 transition-all group"
               onClick={() => document.getElementById('donation-section')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Donate Now
-              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
               size="lg" 
               variant="outline" 
-              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white text-lg px-8 py-6 group"
+              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 group"
               onClick={() => document.getElementById('get-involved')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Become a Volunteer
-              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
 
           {/* Trust Indicators */}
-          <div className="flex flex-wrap gap-6 text-white animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
-              <CheckCircle className="w-5 h-5 text-green-400" />
-              <span className="text-sm sm:text-base">Legally Registered Nonprofit</span>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 text-white animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-2 sm:px-4 rounded-lg">
+              <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-400" />
+              <span className="text-xs sm:text-sm">Legally Registered</span>
             </div>
-            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
-              <CheckCircle className="w-5 h-5 text-green-400" />
-              <span className="text-sm sm:text-base">100% Transparent</span>
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-2 sm:px-4 rounded-lg">
+              <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-400" />
+              <span className="text-xs sm:text-sm">100% Transparent</span>
             </div>
-            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
-              <CheckCircle className="w-5 h-5 text-green-400" />
-              <span className="text-sm sm:text-base">Community Driven</span>
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-2 sm:px-4 rounded-lg">
+              <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-400" />
+              <span className="text-xs sm:text-sm">Community Driven</span>
             </div>
           </div>
         </div>

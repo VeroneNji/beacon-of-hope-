@@ -25,7 +25,7 @@ export function Team() {
         </div>
 
         {/* Team Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {teamMembers.map((member, index) => (
             <div 
               key={index}
@@ -55,25 +55,25 @@ export function Team() {
               </div>
 
               {/* Content */}
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-1">
+              <div className="p-4 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">
                   {member.name}
                 </h3>
-                <p className="text-sm font-semibold text-green-600 mb-3 uppercase tracking-wide">
+                <p className="text-xs sm:text-sm font-semibold text-green-600 mb-2 sm:mb-3 uppercase tracking-wide">
                   {member.role}
                 </p>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed line-clamp-3">
                   {member.description}
                 </p>
                 
                 {/* Email */}
-                <div className="mt-4 pt-4 border-t border-gray-100">
+                <div className="mt-3 sm:mt-4 pt-3 sm:pt-4 border-t border-gray-100">
                   <a 
                     href={`mailto:${member.email}`}
-                    className="text-sm text-gray-500 hover:text-green-600 transition-colors flex items-center gap-2"
+                    className="text-xs sm:text-sm text-gray-500 hover:text-green-600 transition-colors flex items-center gap-2"
                   >
-                    <Mail className="w-4 h-4" />
-                    {member.email}
+                    <Mail className="w-3 h-3 sm:w-4 sm:h-4" />
+                    <span className="truncate">{member.email}</span>
                   </a>
                 </div>
               </div>
@@ -82,12 +82,12 @@ export function Team() {
         </div>
 
         {/* Join Team CTA */}
-        <div className="mt-16 bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-8 text-center text-white max-w-4xl mx-auto">
-          <h3 className="text-2xl font-bold mb-3">Want to Join Our Team?</h3>
-          <p className="text-green-100 mb-6 max-w-2xl mx-auto">
+        <div className="mt-12 sm:mt-16 bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-6 sm:p-8 text-center text-white max-w-4xl mx-auto">
+          <h3 className="text-xl sm:text-2xl font-bold mb-3">Want to Join Our Team?</h3>
+          <p className="text-green-100 mb-4 sm:mb-6 max-w-2xl mx-auto text-sm sm:text-base">
             We're always looking for passionate individuals who want to make a difference. Check our current openings or submit your interest.
           </p>
-          <button className="bg-white hover:bg-gray-100 text-green-700 font-semibold px-8 py-3 rounded-full transition-all shadow-lg hover:shadow-xl">
+          <button className="bg-white hover:bg-gray-100 text-green-700 font-semibold px-6 sm:px-8 py-3 rounded-full transition-all shadow-lg hover:shadow-xl text-sm sm:text-base">
             View Career Opportunities
           </button>
         </div>
